@@ -12,7 +12,9 @@ A comissão do vendedor, no caso da venda ser parcelada (5% sobre o valor total);
 main() {
 	float valorTotal, desconto, valorComDesconto, valorParcela, comissaoAVista, comissaoParcela;
 	
-	valorTotal = 1000.00;
+	printf(" Insira o valor total: ");
+	scanf("%f", &valorTotal);	
+
 	desconto = 0.9;
 	valorComDesconto = valorTotal * desconto;
 	valorParcela = valorTotal / 3;

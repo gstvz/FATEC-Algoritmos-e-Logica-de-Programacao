@@ -5,7 +5,8 @@
 main() {
 	float numero;
 	
-	numero = 5.5;
+	printf(" Insira um numero: ");
+	scanf("%f", &numero);	
 	
 	printf(" O numero real e: %.2f ", numero);
 }

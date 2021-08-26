@@ -9,7 +9,9 @@ A formula de conversao e: K = 1.61 * M, sendo K a distancia em quilometros e M e
 main() {
 	float milhas, km;
 	
-	milhas = 100;
+	printf(" Insira a distancia em milhas: ");
+	scanf("%f", &milhas);	
+	
 	km = 1.61 * milhas;
 	
 	printf(" %.2f milhas convertido para km e %.2f km ", milhas, km);	

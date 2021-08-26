@@ -9,7 +9,9 @@ A formula de conversao e: A = M * 0.000247, sendo M a área em metros quadrados e
 main() {
 	float metros, acres;
 	
-	metros = 4046.86;
+	printf(" Insira o valor da area em metros: ");
+	scanf("%f", &metros);
+		
 	acres = metros * 0.000247;
 	
 	printf(" %.2f metros convertidos para acres e %.2f acres ", metros, acres);

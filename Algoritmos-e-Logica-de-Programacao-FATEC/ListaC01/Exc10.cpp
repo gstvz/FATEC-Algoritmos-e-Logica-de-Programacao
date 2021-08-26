@@ -9,7 +9,9 @@ A formula de conversao e: M = K/3.6, sendo K a velocidade em km/h e M em m/s.
 main() {
 	float kmPorH, mPorS;
 	
-	kmPorH = 100;
+	printf(" Insira a velocidade em km/h: ");
+	scanf("%f", &kmPorH);	
+	
 	mPorS = kmPorH/3.6;
 	
 	printf(" %.2f km/h convertido para m/s e %.2f m/s ", kmPorH, mPorS);	

@@ -9,9 +9,13 @@ Calcule e imprima o valor do novo salário, sabendo que ele recebeu um aumento de
 main() {
 	float salario, aumento, novoSalario;
 	
-	salario = 1100.00;
-	aumento = 1.25;
-	novoSalario = salario * aumento;
+	printf(" Insira o valor do salario: ");
+	scanf("%f", &salario);
 	
-	printf(" O salario de R$%.2f com 25 porcento de aumento passa a ser: R$%.2f", salario, novoSalario);
+	printf(" Insira a porcentagem do aumento: ");
+	scanf("%f", &aumento);	
+
+	novoSalario = salario * (1 + (aumento/100));
+	
+	printf(" O salario de R$%.2f com %.2f porcento de aumento passa a ser: R$%.2f", salario, aumento, novoSalario);
 }

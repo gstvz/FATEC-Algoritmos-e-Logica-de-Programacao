@@ -7,15 +7,15 @@ Gere outro numero formado pelos digitos invertidos do numero lido.
 #include <math.h>
 
 main() {
-	int numeroEntrada = 592, numeroInvertido = 0, ultimo;
+	int numero, centena, dezena, unidade, soma;
 	
-	ultimo = numeroEntrada % 10;
-	numeroInvertido = numeroInvertido * 10 + ultimo;
-	numeroEntrada = numeroEntrada / 10;
-	ultimo = numeroEntrada % 10;
-	numeroInvertido = numeroInvertido * 10 + ultimo;
-	numeroEntrada = numeroEntrada / 10;	
-	numeroInvertido = numeroInvertido * 10 + numeroEntrada;
+	printf(" Insira um numero: ");
+	scanf("%i", &numero);
 	
-	printf(" O numero 592 invertido e: %i ", numeroInvertido);
+	centena = numero / 100;
+	dezena = numero % 100 / 10;
+	unidade = numero % 100 % 10;
+	soma = centena + dezena * 10 + unidade * 100;
+	
+	printf(" O numero %i invertido e: %03i ", numero, soma);
 }

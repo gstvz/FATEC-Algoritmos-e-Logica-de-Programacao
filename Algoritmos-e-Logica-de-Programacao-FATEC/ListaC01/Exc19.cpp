@@ -9,7 +9,9 @@ A formula de conversao e: M = L / 1000, sendo L o volume em litros e M o volume 
 main() {
 	float metros, litros;
 	
-	litros  = 10;
+	printf(" Insira o volume em litros: ");
+	scanf("%f", &litros);
+		
 	metros = litros / 1000;
 	
 	printf(" %.2f metros cubicos convertidos para litros e %.2f litros ", litros, metros);

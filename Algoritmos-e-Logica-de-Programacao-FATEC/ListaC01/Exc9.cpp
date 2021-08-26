@@ -9,7 +9,9 @@ A formula de conversao e: K = C + 273.15, sendo K a temperatura em Kelvin e C a 
 main() {
 	float celsius, kelvin;
 	
-	celsius = 37.5;
+	printf(" Insira a temperatura em Celsius: ");
+	scanf("%f", &celsius);
+		
 	kelvin = celsius + 273.15;
 	
 	printf(" %.2f C convertido para Kelvin e %.2f C ", celsius, kelvin);	

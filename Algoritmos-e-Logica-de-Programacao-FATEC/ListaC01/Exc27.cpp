@@ -9,7 +9,9 @@ A formula de conversao e: M = H * 10000, sendo M a área em metros quadrados e H 
 main() {
 	float metros, hectares;
 	
-	hectares = 1;
+	printf(" Insira o valor da area em hectares: ");
+	scanf("%f", &hectares);
+	
 	metros = hectares * 10000;
 	
 	printf(" %.2f hectares convertidos para metros e %.2f metros ", hectares, metros);

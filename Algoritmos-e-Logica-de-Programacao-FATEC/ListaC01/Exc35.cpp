@@ -9,8 +9,12 @@ Faça um programa que receba os valores de a e b e calcule o valor da hipotenusa 
 main() {
 	float a, b, hipotenusa;
 	
-	a = 5;
-	b = 6;
+	printf(" Insira o valor do cateto a: ");
+	scanf("%f", &a);
+	
+	printf(" Insira o valor do cateto b: ");
+	scanf("%f", &b);
+	
 	hipotenusa = pow(pow(a, 2) + pow(b, 2), 0.5);
 	
 	printf(" A hipotenusa do triangulo com os catetos %.2f e %.2f e: %.2f", a, b, hipotenusa);

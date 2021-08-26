@@ -8,9 +8,13 @@ Faça um programa que leia o valor de um produto e imprima o valor com desconto, 
 main() {
 	float valor, desconto, valorComDesconto;
 	
-	valor = 500.00;
-	desconto = 0.88;
-	valorComDesconto = valor * desconto;
+	printf(" Insira o valor de um produto: ");
+	scanf("%f", &valor);
 	
-	printf(" O produto de valor R$%.2f com 12 porcento de desconto passa a custar: R$%.2f", valor, valorComDesconto);
+	printf(" Insira a porcentagem de desconto: ");
+	scanf("%f", &desconto);
+		
+	valorComDesconto = valor * (1 - (desconto/100));
+	
+	printf(" O produto de valor R$%.2f com %.2f porcento de desconto passa a custar: R$%.2f", valor, desconto, valorComDesconto);
 }

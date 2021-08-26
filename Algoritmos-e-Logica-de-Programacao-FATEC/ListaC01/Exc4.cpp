@@ -6,7 +6,9 @@
 main() {
 	float numero, quadrado;
 	
-	numero = 5.5;
+	printf(" Insira um numero real: ");
+	scanf("%f", &numero);	
+	
 	quadrado = pow(numero, 2);
 	
 	printf(" O quadrado de %.2f e %.2f ", numero, quadrado);	

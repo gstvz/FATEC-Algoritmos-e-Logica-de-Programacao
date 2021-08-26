@@ -8,8 +8,9 @@ Escreva um programa que leia as coordenadas x e y de pontos no R2 e calcule sua 
 main() {
 	float x, y, origemA, origemB, distancia;
 	
-	x = 5;
-	y = 3;
+	printf(" Insira a coordenada x e y: ");
+	scanf("%f %f", &x, &y);	
+
 	origemA = 0;
 	origemB = 0;
 	distancia = pow(pow(x, 2) + pow(y, 2), 0.5);

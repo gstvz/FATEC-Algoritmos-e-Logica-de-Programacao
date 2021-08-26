@@ -9,7 +9,9 @@ A formula de conversao e: R = G * pi/180, sendo G o angulo em graus e R em radia
 main() {
 	float angulo, radiano;
 	
-	angulo = 180;
+	printf(" Insira a medida do angulo em graus: ");
+	scanf("%f", &angulo);	
+	
 	radiano = angulo * M_PI/180;
 	
 	printf(" %.2f graus convertido para radiano e %.2f rad ", angulo, radiano);

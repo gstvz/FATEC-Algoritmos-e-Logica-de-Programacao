@@ -9,8 +9,12 @@ O volume de um cilindro circular é calculado por meio da seguinte fórmula: V = p
 main() {
 	float altura, raio, volume;
 	
-	altura = 5;
-	raio = 6;
+	printf(" Insira a altura do cilindro circular: ");
+	scanf("%f", &altura);
+	
+	printf(" Insira o raio do cilindro circular: ");
+	scanf("%f", &raio);
+	
 	volume = M_PI * pow(raio, 2) * altura;
 	
 	printf(" O volume do cilindro circular de raio %.2f e altura %.2f e: %.2f", raio, altura, volume);

@@ -6,7 +6,9 @@
 main() {
 	float numero, quintaParte;
 	
-	numero = 5.5;
+	printf(" Inisira um numero real: ");
+	scanf("%f", &numero);	
+	
 	quintaParte = numero / 5;
 	
 	printf(" A quinta parte de %.2f e %.2f ", numero, quintaParte);	

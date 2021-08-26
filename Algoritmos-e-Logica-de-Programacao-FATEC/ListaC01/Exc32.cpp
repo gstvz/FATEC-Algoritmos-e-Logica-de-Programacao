@@ -8,7 +8,9 @@ Leia um número inteiro e imprima a soma do seu sucessor de seu triplo com o ante
 main() {
 	int numero, antecessorDobro, sucessorTriplo, soma;
 	
-	numero = 5;
+	printf(" Insira um numero inteiro: ");
+	scanf("%i", &numero);
+		
 	antecessorDobro = numero * 2 - 1;
 	sucessorTriplo = numero * 3 + 1;
 	soma = antecessorDobro + sucessorTriplo;

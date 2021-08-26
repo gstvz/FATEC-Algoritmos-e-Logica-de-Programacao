@@ -5,7 +5,8 @@
 main() {
 	int numero;
 	
-	numero = 5;
-	
+	printf(" Insira um numero: ");
+	scanf("%i", &numero);
+		
 	printf(" O numero inteiro e: %i ", numero);
 }

@@ -7,17 +7,30 @@ Faca um programa que leia quanto cada apostador investiu, o valor do premio, e i
 #include <math.h>
 
 main() {
-	float premio, aposta1, aposta2, aposta3, totalApostas, amigo1, amigo2, amigo3;
+	float premio, aposta1, aposta2, aposta3, totalApostas, p1, p2, p3, amigo1, amigo2, amigo3;
 	
-	premio = 50.000;
-	aposta1 = 20.000;
-	aposta2 = 10.000;
-	aposta3 = 1.000;
+	printf(" Insira o valor do premio: ");
+	scanf("%f", &premio);
+	
+	printf(" Insira o valor da aposta 1: ");
+	scanf("%f", &aposta1);
+	
+	printf(" Insira o valor da aposta 2: ");
+	scanf("%f", &aposta2);
+	
+	printf(" Insira o valor da aposta 3: ");
+	scanf("%f", &aposta3);
+	
 	totalApostas = aposta1 + aposta2 + aposta3;
-	amigo1 = premio * aposta1 / totalApostas;
-	amigo2 = premio * aposta2 / totalApostas;
-	amigo3 = premio * aposta3 / totalApostas;
 	
-	printf(" O valor do premio e: R$%.3f \n O primeiro apostou R$%.3f \n O segundo apostou R$%.3f \n O terceiro apostou R$%.3f \n", premio, aposta1, aposta2, aposta3);
-	printf(" O primeiro levou R$%.3f \n O segundo levou R$%.3f \n O terceiro levou R$%.3f ", amigo1, amigo2, amigo3);
+	p1 = aposta1 / totalApostas;
+	p2 = aposta2 / totalApostas;
+	p3 = aposta3 / totalApostas;
+		
+	amigo1 = premio * p1;
+	amigo2 = premio * p2;
+	amigo3 = premio * p3;
+	
+	printf(" O valor do premio e: R$%.2f \n O primeiro apostou R$%.2f \n O segundo apostou R$%.2f \n O terceiro apostou R$%.2f \n", premio, aposta1, aposta2, aposta3);
+	printf(" O primeiro levou R$%.2f \n O segundo levou R$%.2f \n O terceiro levou R$%.2f ", amigo1, amigo2, amigo3);
 }

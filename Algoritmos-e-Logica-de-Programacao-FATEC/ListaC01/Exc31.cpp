@@ -8,7 +8,9 @@ Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
 main() {
 	int numero, antecessor, sucessor;
 	
-	numero = 5;
+	printf(" Insira um numero inteiro: ");
+	scanf("%i", &numero);	
+	
 	antecessor = numero - 1;
 	sucessor = numero + 1;
 	

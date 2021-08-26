@@ -18,8 +18,8 @@ main() {
 	ganhador2 = (valor * 32) / 100;
 	ganhador3 = valor - ganhador1 - ganhador2;	
 	
-	printf(" O premio de R$%.5f foi dividido em tres ganhadores: \n", valor);
-	printf(" O primeiro ganhador recebeu R$%.5f \n", ganhador1);
-	printf(" O segund ganhador recebeu R$%.5f \n", ganhador2);
-	printf(" O terceiro ganhador recebeu R$%.5f \n", ganhador3);
+	printf(" O premio de R$%.3f foi dividido em tres ganhadores: \n", valor);
+	printf(" O primeiro ganhador recebeu R$%.3f \n", ganhador1);
+	printf(" O segund ganhador recebeu R$%.3f \n", ganhador2);
+	printf(" O terceiro ganhador recebeu R$%.3f \n", ganhador3);
 }

@@ -9,7 +9,9 @@ A formula de conversao e: M = 0.91 * J, sendo J o comprimento em jardas e M o co
 main() {
 	float jardas, metros;
 	
-	jardas = 109.36;
+	printf(" Insira o valor do comprimento em jardas: ");
+	scanf("%f", &jardas);
+		
 	metros = 0.91 * jardas;
 	
 	printf(" %.2f jardas convertidas para metros e %.2f metros ", jardas, metros);

@@ -9,7 +9,9 @@ A formula de conversao e: F = C*(9.0/5.0)+32.0, sendo F a temperatura em Fahrenh
 main() {
 	float celsius, fahrenheit;
 	
-	celsius = 37.5;
+	printf(" Insira a temperatura em Celsius: ");
+	scanf("%f", &celsius);
+
 	fahrenheit = celsius * (9.0/5.0) + 32.0;
 	
 	printf(" %.2f C convertido para Fahrenheit e %.2f F ", celsius, fahrenheit);	

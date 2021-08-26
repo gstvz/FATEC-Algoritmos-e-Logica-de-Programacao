@@ -8,8 +8,12 @@ Implemente um programa que calcule o ano de nascimento de uma pessoa a partir de
 main() {
 	int idade, anoAtual, anoNascimento;
 	
-	idade = 25;
-	anoAtual = 2021;
+	printf(" Insira a sua idade: ");
+	scanf("%i", &idade);
+	
+	printf(" Insira o ano atual: ");
+	scanf("%i", &anoAtual);
+
 	anoNascimento = anoAtual - idade;
 	
 	printf(" A pessoa que tem %i anos no ano de %i nasceu no ano de: %i ", idade, anoAtual, anoNascimento);

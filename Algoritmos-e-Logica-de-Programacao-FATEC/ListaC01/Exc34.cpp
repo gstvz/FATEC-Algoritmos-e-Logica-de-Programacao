@@ -8,7 +8,9 @@ Leia o valor do raio de um círculo e calcule e imprima a área do círculo corresp
 main() {
 	float raio, area;
 	
-	raio = 5.5;
+	printf(" Insira o valor do raio do circulo: ");
+	scanf("%f", &raio);
+
 	area = M_PI * pow(raio, 2);
 	
 	printf(" O raio do circulo e %.2f e sua area e: %.2f", raio, area);

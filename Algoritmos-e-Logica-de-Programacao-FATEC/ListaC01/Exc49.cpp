@@ -9,10 +9,17 @@ O programa deve resultar com o novo horario (hora, minuto e segundo) do termino 
 main() {
 	int horas, minutos, segundos, duracao, novaHora, novosMinutos, novosSegundos;
 	
-	horas = 06;
-	minutos = 00;
-	segundos = 00;
-	duracao = 45035;
+	printf(" Insira as horas: ");
+	scanf("%i", &horas);
+	
+	printf(" Insira os minutos: ");
+	scanf("%i", &minutos);
+	
+	printf(" Insira os segundos: ");
+	scanf("%i", &segundos);
+	
+	printf(" Insira a duracao da experiencia, em segundos: ");
+	scanf("%i", &duracao);
 	
 	novaHora = horas + (duracao / 3600);
 	novosMinutos = minutos + ((duracao % 3600) / 60);
